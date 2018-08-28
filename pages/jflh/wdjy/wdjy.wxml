@@ -1,0 +1,17 @@
+<!--合法稳定就业-->
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+  <view class="page__bd">
+    <view class="weui-cells__title">合法稳定就业</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+            <view class="weui-label">累计月数</view>
+        </view>
+        <view class="weui-cell__bd">
+            <input class="weui-input" type="number" value="{{month}}" placeholder="请输入整数" bindblur="onConfirm"/>
+        </view>
+      </view>
+    </view>
+    <view class="weui-cells__tips">请填写截止到积分落户申报工作启动的上一年度12月31日，申请人“在京连续缴纳社会保险年限”的累计月数，不包括社会保险个人权益记录中的补缴月数。</view>
+  </view>
+</view>

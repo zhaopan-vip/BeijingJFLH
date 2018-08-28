@@ -1,0 +1,60 @@
+<!--合法稳定住所-->
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+  <view class="page__bd">
+    <view class="weui-cells__title">合法稳定住所</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_select">
+          <view class="weui-cell__hd weui-cell__hd_in-select-after">
+              <view class="weui-label">居住类型</view>
+          </view>
+          <view class="weui-cell__bd">
+            <picker bindchange="bindTypeChange" value="{{typeIndex}}" range="{{types}}">
+                <view class="weui-select weui-select_in-select-after">{{types[typeIndex]}}</view>
+            </picker>
+          </view>
+      </view>
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+            <view class="weui-label">起始年月</view>
+        </view>
+        <view class="weui-cell__bd">
+            <picker bindchange="bindStartChange" mode="date" fields="month" value="{{start}}">
+                <view class="weui-input">{{start}}</view>
+            </picker>
+        </view>
+      </view>
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+            <view class="weui-label">结束年月</view>
+        </view>
+        <view class="weui-cell__bd">
+            <picker bindchange="bindEndChange" mode="date" fields="month" value="{{end}}">
+                <view class="weui-input">{{end}}</view>
+            </picker>
+        </view>
+      </view>
+      <view class="weui-cell weui-cell_link">
+          <view class="weui-cell__bd" bindtap="bindTapMore">添加更多</view>
+      </view>
+    </view>
+    <view class="weui-cells__tips">在线申报系统将根据申请人填报的居住起止时间和实际取得房产证时间综合计算得出实际合法稳定住所的居住年限。
+    </view>
+    <!-- 结果表格 -->
+    <view class="table">
+      <view class="tr">
+        <view class="th">居住类型</view>
+        <view class="th">起始年月</view>
+        <view class="th">终止年月</view>
+        <view class="th"></view>
+      </view>
+      <block wx:for="{{items}}" wx:for-index="idx">
+        <view class="tr">
+          <view class="th">{{types[item.typeIndex]}}</view>
+          <view class="th">{{item.start}}</view>
+          <view class="th">{{item.end}}</view>
+          <view class="th"><icon type="cancel" size="23" bindtap="bindTapDelete" data-index="{{idx}}"></icon></view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

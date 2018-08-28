@@ -1,0 +1,21 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/jflh/jflh",
+    "pages/jflh/jbxx/jbxx",
+    "pages/jflh/wdjy/wdjy",
+    "pages/jflh/wdzs/wdzs",
+    "pages/jflh/jybj/jybj",
+    "pages/jflh/zzqy/zzqy",
+    "pages/jflh/cxcy/cxcy",
+    "pages/jflh/ns/ns",
+    "pages/jflh/rybz/rybz",
+    "pages/jflh/sfjl/sfjl"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "QDota",
+    "navigationBarTextStyle":"black"
+  }
+}

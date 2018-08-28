@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view>
+  <view class="index-list">
+    <block wx:for="{{items}}" wx:for-index="idx">
+      
+        <view class="item-tree" data-index="{{idx}}" bindtap="toPage">
+          <image src="{{item.icon}}" class="image"/>
+          <view class="item-right">
+            <view>
+              <text class="title">{{item.title}}</text>
+              <text class="sum" wx:if="{{idx > 0}}">{{item.sum}}</text>
+            </view>
+            <view class="line"></view>
+          </view>
+        </view>
+      
+    </block>
+  </view>
+  <view class="item-total">总分：{{total}}</view>
+</view>

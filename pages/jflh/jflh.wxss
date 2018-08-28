@@ -1,0 +1,49 @@
+/**index.wxss**/
+
+.index-list{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.item-total {
+  padding: 10px;
+}
+.item-tree {
+  display: flex;
+  flex-direction: row;
+  padding-left: 32rpx;
+  padding-right: 32rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10px;
+}
+.item-right{
+  display: flex;
+  flex-direction: column;
+  margin-left: 15rpx;
+  margin-top: 10rpx;
+  margin-bottom: 20rpx;
+  position: relative;
+  width: 80%;
+}
+.image{
+  width: 88rpx; 
+  height: 88rpx;
+  vertical-align: middle;
+}
+.title{
+  color: #000000;
+  font-family:"微软雅黑";
+  font-size:15px;
+  font-weight: bold;
+}
+.sum{
+  position: absolute;
+  right: 15rpx;
+  color: #FF0000;
+  font-family:"微软雅黑";
+  font-size:15px;
+  font-weight: bold;
+}
+.line{
+  border-bottom: 1px solid #2ab9c9;
+}

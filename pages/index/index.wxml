@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container">
+  <view style="position:fixed ;top:40%;box-sizing:border-box;padding:20rpx;text-align:center;width:100%">
+   <text bindtap="onClickJFLH">2018年北京市积分落户</text>
+  </view>
+</view>

@@ -1,0 +1,19 @@
+<!--守法记录-->
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+  <view class="page__bd">
+    <view class="weui-cells__title">行政拘留处罚</view>
+    <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_select">
+          <view class="weui-cell__hd weui-cell__hd_in-select-after">
+              <view class="weui-label">次数</view>
+          </view>
+          <view class="weui-cell__bd">
+              <picker bindchange="bindPickerChange" value="{{pickerIndex}}" range="{{pickerItems}}">
+                  <view class="weui-select weui-select_in-select-after">{{pickerItems[pickerIndex]}}</view>
+              </picker>
+          </view>
+        </view>
+    </view>
+    <view class="weui-cells__tips">2017年1月1日起，至2017年12月31日止，申请人在北京市的行政拘留处罚次数。</view>
+  </view>
+</view>

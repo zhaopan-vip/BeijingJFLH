@@ -1,0 +1,31 @@
+<!--教育背景-->
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+  <view class="page__bd">
+    <view class="weui-cells__title">教育背景</view>
+    <view class="weui-cells weui-cells_after-title">
+      <radio-group bindchange="radioChange">
+          <label class="weui-cell weui-check__label" wx:for="{{radioItems}}" wx:key="value">
+              <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+
+              <view class="weui-cell__bd">{{item.name}}</view>
+              <view class="weui-cell__ft weui-cell__ft_in-radio" wx:if="{{item.checked}}">
+                  <icon class="weui-icon-radio" type="success_no_circle" size="16"></icon>
+              </view>
+          </label>
+      </radio-group>
+    </view>
+    <view class="weui-cells__title">取得学历(学位)期间在京连续缴纳社会保险年限</view>
+    <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_select">
+                <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                    <view class="weui-label">累计月数</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入整数" value="{{degreeMonths}}"/>
+                </view>
+            </view>
+    </view>
+    <view class="weui-cells__tips">1、取得学历(学位)期间连续缴纳社会保险年限及连续居住年限的积分与学历(学位)积分不累计。</view>
+    <view class="weui-cells__tips">2、教育背景指标：指经国家教育部承认的国内及国外学历学位。以大学本科及以上学历学位进行教育背景指标积分申请时，应兼具相应的学历证书和学位证书。</view>
+  </view>
+</view>

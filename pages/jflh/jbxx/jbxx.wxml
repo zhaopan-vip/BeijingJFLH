@@ -1,0 +1,19 @@
+<!--基本信息-->
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+  <view class="page__bd">
+    <view class="weui-cells__title">基本信息</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+            <view class="weui-label">出生日期</view>
+        </view>
+        <view class="weui-cell__bd">
+            <picker mode="date" value="{{date}}" bindchange="bindDateChange">
+                <view class="weui-input">{{date}}</view>
+            </picker>
+        </view>
+      </view>
+    </view>
+    <view class="weui-cells__tips">积分系统以2017年1月1日为截至日期，计算该年申报时的年龄</view>
+  </view>
+</view>
